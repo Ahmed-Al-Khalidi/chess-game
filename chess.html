@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Single-file Chess</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Single-file Chess (HTML + CSS + JS)</h1>
+  <div id="app">
+    <div>
+      <div id="board" class="board"></div>
+      <div class="controls">
+        <button id="newBtn">New game</button>
+        <button id="undoBtn">Undo</button>
+        <button id="flipBtn">Flip</button>
+      </div>
+    </div>
+    <div class="status">
+      <div><strong>Turn:</strong> <span id="turn">White</span></div>
+      <div><strong>State:</strong> <span id="state">Playing</span></div>
+      <div style="margin-top:8px"><strong>Captured:</strong>
+        <div class="captured" id="captured"></div>
+      </div>
+      <div style="margin-top:8px"><strong>Last move:</strong> <span id="lastMove">-</span></div>
+    </div>
+  </div>
+  <footer>
+    Simple chess engine: legal moves, castling, promotion, en-passant, check/checkmate detection. No AI — play vs human. Drag & click supported.
+  </footer>
+  <script src="dynamic.js"></script>
+
+</body>
+</html>
