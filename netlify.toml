@@ -1,0 +1,4 @@
+[[redirects]]
+from="/*"
+to="/chess.html"
+status = 200
